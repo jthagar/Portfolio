@@ -1,0 +1,75 @@
+{% extends "base/home.html" %}
+    {% block content %}
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient" style="opacity: 1;filter: blur(0px) brightness(100%) contrast(124%) hue-rotate(249deg) invert(0%) saturate(114%);border-style: none;color: rgba(30,191,60,0);">
+        <div class="container"><a class="navbar-brand logo" href="#">Brand</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'homepage' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'projects page' %}">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'cv page' %}">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'hire page' %}">Hire me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page projects-page">
+        <section class="portfolio-block projects-cards">
+            <div class="container">
+                <!-- Start: portfolio heading -->
+                <div class="heading">
+                    <h2>Recent Work</h2>
+                </div><!-- End: portfolio heading -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="../static/img/nature/image1.jpg" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="../static/img/nature/image2.jpg" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="../static/img/nature/image3.jpg" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="../static/img/nature/image4.jpg" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="../static/img/nature/image5.jpg" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="../static/img/nature/image6.jpg" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Lorem Ipsum</a></h6>
+                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% endblock %}

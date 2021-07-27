@@ -1,0 +1,94 @@
+{% extends "base/home.html" %}
+    {% block content %}
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient" style="opacity: 1;filter: blur(0px) brightness(100%) contrast(124%) hue-rotate(249deg) invert(0%) saturate(114%);border-style: none;color: rgba(30,191,60,0);">
+        <div class="container"><a class="navbar-brand logo" href="#">Brand</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'homepage' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'projects page' %}">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'cv page' %}">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'hire page' %}">Hire me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="portfolio-block block-intro">
+            <div class="container">
+                <div class="avatar" style="background-image:url(&quot;static/img/avatars/avatar.jpg&quot;);"></div>
+                <div class="about-me">
+                    <p>Hello! I am <strong>Jay Hagar</strong>. I work as interface and front end developer. I have passion for pixel perfect, minimal and easy to use interfaces.</p><a class="btn btn-outline-primary" role="button" href="{% url 'hire page' %}">Hire me</a>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block photography">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="static/img/nature/image5.jpg"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="static/img/nature/image2.jpg"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="static/img/tech/image4.jpg"></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block call-to-action border-bottom">
+            <div class="container">
+                <!-- Currently unused div/container space below project cards -->
+            </div>
+        </section>
+        <section class="portfolio-block skills">
+            <div class="container">
+                <!-- Start: portfolio heading -->
+                <div class="heading">
+                    <h2>Special Skills</h2>
+                </div><!-- End: portfolio heading -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline" style="background: #1eb53a;"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Web Design</h3>
+                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline" style="background: #1eb53a;"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Interface Design</h3>
+                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline" style="background: #1eb53a;"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Photography and Print</h3>
+                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="portfolio-block website gradient" style="filter: hue-rotate(227deg);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-5 offset-lg-1 text">
+                    <h3>Website Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efr nunc, vivamus vel accumsan dui. Quisque ac dolor cursus, volutpat nisl vel, porttitor eros.</p>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div class="portfolio-laptop-mockup">
+                        <div class="screen">
+                            <div class="screen-content" style="background-image:url(&quot;static/img/tech/image6.png&quot;);"></div>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
